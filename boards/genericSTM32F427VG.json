@@ -1,0 +1,43 @@
+{
+    "build": {
+      "core": "stm32",
+      "cpu": "cortex-m4",
+      "extra_flags": "-DSTM32F4 -DSTM32F427_437xx -DSTM32F427xx -DARDUINO_GENERIC_F427VGTX",
+      "f_cpu": "180000000L",
+      "mcu": "stm32f427vgt6",
+      "product_line": "STM32F427xx",
+      "variant": "STM32F4xx/F427V(G-I)T_F429V(E-G-I)T_F437V(G-I)T_F439V(G-I)T"
+    },
+    "debug": {
+      "default_tools": [
+        "stlink"
+      ],
+      "jlink_device": "STM32F427VG",
+      "onboard_tools": [
+        "stlink"
+      ],
+      "openocd_target": "stm32f4x",
+      "svd_path": "STM32F427x.svd"
+    },
+    "frameworks": [
+      "arduino",
+      "cmsis",
+      "spl",
+      "stm32cube",
+      "libopencm3"
+    ],
+    "name": "Generic STM32STM32F427VG",
+    "upload": {
+      "maximum_ram_size": 114688,
+      "maximum_size": 1048576,
+      "protocol": "blackmagic",
+      "protocols": [
+        "jlink",
+        "cmsis-dap",
+        "stlink",
+        "blackmagic"
+      ]
+    },
+    "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32f427vg.html",
+    "vendor": "Armstrap"
+  }

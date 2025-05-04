@@ -2,17 +2,17 @@
     "build": {
       "core": "stm32",
       "cpu": "cortex-m4",
-      "extra_flags": "-DSTM32F4 -DSTM32F427_437xx -DSTM32F427xx -DARDUINO_GENERIC_F427VGTX",
+      "extra_flags": "-DSTM32F4 -DSTM32F427_437xx -DSTM32F427xx -DARDUINO_GENERIC_F427ZGTX",
       "f_cpu": "180000000L",
-      "mcu": "stm32f427vgt6",
+      "mcu": "stm32f427zgt6",
       "product_line": "STM32F427xx",
-      "variant": "STM32F4xx/F427V(G-I)T_F429V(E-G-I)T_F437V(G-I)T_F439V(G-I)T"
+      "variant": "STM32F4xx/F427Z(G-I)T_F429ZET_F429Z(G-I)(T-Y)_F437Z(G-I)T_F439Z(G-I)(T-Y)"
     },
     "debug": {
       "default_tools": [
         "stlink"
       ],
-      "jlink_device": "STM32F427VG",
+      "jlink_device": "STM32F427ZG",
       "onboard_tools": [
         "stlink"
       ],
@@ -26,11 +26,11 @@
       "stm32cube",
       "libopencm3"
     ],
-    "name": "Generic STM32STM32F427VG",
+    "name": "Generic STM32STM32F427ZG",
     "upload": {
-      "maximum_ram_size": 114688,
+      "maximum_ram_size": 262144,
       "maximum_size": 1048576,
-      "protocol": "blackmagic",
+      "protocol": "stlink",
       "protocols": [
         "jlink",
         "cmsis-dap",
@@ -38,6 +38,6 @@
         "blackmagic"
       ]
     },
-    "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32f427vg.html",
-    "vendor": "Armstrap"
+    "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32f427zg.html",
+    "vendor": "Custom"
   }
